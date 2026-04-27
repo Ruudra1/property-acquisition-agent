@@ -7,14 +7,9 @@ A simple **property underwriting / acquisition analysis** app.
 
 ## Live Demo
 
-- Frontend (Vercel): **TODO** `https://YOUR_VERCEL_URL.vercel.app`
-- Backend (Render/Railway/Fly/etc.): **TODO** `https://YOUR_BACKEND_URL`
-
-> The frontend expects the backend URL via `VITE_API_BASE`.
+- Frontend (Vercel): `https://YOUR_VERCEL_URL.vercel.app`
 
 ## Screenshots
-
-Add screenshots to `docs/screenshots/` and update the links below.
 
 - Home / Input
 
@@ -91,39 +86,6 @@ npm run dev
 By default, Vite proxies API calls to `http://127.0.0.1:8000`.
 
 If you want to call a remote backend, set `VITE_API_BASE`.
-
-## Deployment
-
-### Frontend on Vercel
-
-1. Push repo to GitHub
-2. Vercel → **New Project** → select the repo
-3. Configure:
-
-- **Root Directory**: `frontend`
-- **Framework Preset**: `Vite`
-- **Build Command**: `npm run build`
-- **Output Directory**: `dist`
-
-4. Add Vercel environment variable:
-
-- `VITE_API_BASE=https://YOUR_BACKEND_URL`
-
-5. Deploy
-
-### Backend hosting (recommended)
-
-Vercel is not ideal for long-running FastAPI services. Use one of:
-
-- Render
-- Railway
-- Fly.io
-- A VPS
-
-When deployed, ensure:
-
-- The backend has `GROQ_API_KEY`
-- CORS allows your Vercel domain (currently it’s permissive)
 
 ## Notes
 

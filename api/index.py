@@ -161,7 +161,7 @@ class AnalyzeResponse(BaseModel):
     error: Optional[str] = None
 
 
-@app.post("/analyze", response_model=AnalyzeResponse)
+@app.post("/api/analyze", response_model=AnalyzeResponse)
 async def analyze_property(request: AnalyzeRequest):
     try:
         inferred_market = infer_market_from_input(request.input)
@@ -222,12 +222,12 @@ Return ONLY the JSON object."""
         raise HTTPException(status_code=500, detail=str(e))
 
 
-@app.get("/health")
+@app.get("/api/health")
 async def health():
     return {"status": "ok", "model": MODEL_NAME, "market": "Tulsa/Midwest"}
 
 
-@app.get("/")
+@app.get("/api/")
 async def root():
     return {
         "name": "Property Acquisition Agent API",

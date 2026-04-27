@@ -227,7 +227,7 @@ async def health():
     return {"status": "ok", "model": MODEL_NAME, "market": "Tulsa/Midwest"}
 
 
-@app.get("/api/")
+@app.get("/api/analyze/")
 async def root():
     return {
         "name": "Property Acquisition Agent API",

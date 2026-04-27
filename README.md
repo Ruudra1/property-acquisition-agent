@@ -7,7 +7,7 @@ A simple **property underwriting / acquisition analysis** app.
 
 ## Live Demo
 
-- Frontend (Vercel): `https://property-acquisition-agent.vercel.app/`
+- Frontend (Vercel): [https://property-acquisition-agent.vercel.app/](https://property-acquisition-agent.vercel.app/)
 
 ## Screenshots
 

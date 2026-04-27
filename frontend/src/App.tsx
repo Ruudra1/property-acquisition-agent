@@ -86,7 +86,7 @@ function App() {
   const [result, setResult] = useState<AnalyzeResponse | null>(null)
 
   const apiBase = (import.meta.env.VITE_API_BASE as string | undefined)?.replace(/\/$/, '')
-  const analyzeUrl = apiBase ? `${apiBase}/analyze` : '/analyze'
+  const analyzeUrl = apiBase ? `${apiBase}/api/analyze` : '/api/analyze'
 
   async function onAnalyze(e: React.FormEvent) {
     e.preventDefault()

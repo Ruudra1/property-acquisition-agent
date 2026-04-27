@@ -18,16 +18,16 @@ Add screenshots to `docs/screenshots/` and update the links below.
 
 - Home / Input
 
-  ![Home](docs/screenshots/home.png)
+  ![Home](docs/screenshots/ss1.png)
 
 - Result / KPIs
 
-  ![Result](docs/screenshots/result.png)
+  ![Result](docs/screenshots/ss2.png)
 
 ## Features
 
 - Paste a Zillow/Redfin URL or address
-- Auto-infers market from URL (e.g. `atlanta-ga` → `Atlanta, GA`) when market is left at default
+- Auto-infers market from URL (e.g. `tulsa-ok` → `Tulsa, OK`) when market is left at default
 - Returns:
   - A plain-English verdict (PASS / REVIEW / FAST-TRACK)
   - Human-friendly KPIs (cap rate, cash-on-cash, rent estimate, etc.)
